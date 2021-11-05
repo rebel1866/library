@@ -1,0 +1,726 @@
+нояб. 01, 2021 11:37:33 AM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, params: [Ljava.lang.String;@161cd475
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 01, 2021 11:38:57 AM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Wrong password
+нояб. 01, 2021 11:57:43 AM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: sd~dsf~sdf~ds~sd Response: 0Incorrect year
+Try again
+нояб. 01, 2021 12:00:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: we~ds~sd~ds~sd Response: 0Incorrect year
+Try again
+нояб. 01, 2021 12:02:30 PM by.epamtc.stanislavmelnikov.controller.commandimpl.AdminRightsVerifier execute
+INFO: Admin rights check failure 
+ Current admin status: by.epamtc.stanislavmelnikov.entity.User@3aa9e816
+нояб. 01, 2021 12:23:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~mas~das~asd~sad~sa
+нояб. 01, 2021 12:23:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: mas~das~asd~sad~sa Response: 0Incorrect year
+Try again
+нояб. 01, 2021 12:24:43 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserAdder execute
+INFO: User adding failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect password
+request: asd~sad~sad~as~sa~sa~s response: 0Incorrect password
+Try again
+нояб. 01, 2021 1:23:34 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: stanislav
+нояб. 01, 2021 1:23:34 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: stanislav
+нояб. 01, 2021 1:25:08 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start petr18
+нояб. 01, 2021 1:25:08 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start petr18
+нояб. 01, 2021 1:25:08 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: after petr18
+нояб. 01, 2021 1:32:08 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start stanislav
+нояб. 01, 2021 1:34:05 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start stanislav
+нояб. 01, 2021 1:34:40 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start stanislav
+нояб. 01, 2021 1:35:57 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start stanislav
+нояб. 01, 2021 1:36:46 PM by.epamtc.stanislavmelnikov.dao.daoimpl.XmlUserDao removeByLogin
+INFO: start petr18
+нояб. 01, 2021 3:06:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: request params: asd
+нояб. 01, 2021 3:06:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: index out of bound
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater.execute(BookUpdater.java:29)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:141)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:145)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:77)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:07:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: request params: login=as
+нояб. 01, 2021 3:07:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: Putting params in map, key: login, value: as
+нояб. 01, 2021 3:07:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: Book updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: You haven't entered id.
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.updateById(LibraryServiceImpl.java:123)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater.execute(BookUpdater.java:39)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:141)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:145)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:145)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:77)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:08:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: user14~firstname=Ivan
+нояб. 01, 2021 3:08:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: index out of bound error
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:30)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:77)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:82)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:09:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: request params: login=user14~firstname=Ivan
+нояб. 01, 2021 3:09:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:09:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: Putting params in map, key: firstname, value: Ivan
+нояб. 01, 2021 3:09:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: Book updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: You haven't entered id.
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.updateById(LibraryServiceImpl.java:123)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater.execute(BookUpdater.java:39)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:141)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:77)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:82)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:10:14 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~firstname=Ivan
+нояб. 01, 2021 3:10:14 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:10:14 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: firstname, value: Ivan
+нояб. 01, 2021 3:12:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: asdf
+нояб. 01, 2021 3:12:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: index out of bound error
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:30)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:77)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:12:30 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~age=14
+нояб. 01, 2021 3:12:30 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:12:30 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: age, value: 14
+нояб. 01, 2021 3:18:17 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~age=174
+нояб. 01, 2021 3:18:17 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:18:17 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: age, value: 174
+нояб. 01, 2021 3:18:17 PM by.epamtc.stanislavmelnikov.view.menu.Menu runMenu
+INFO: null point
+java.lang.NullPointerException: Cannot read the array length because "input" is null
+	at java.base/java.security.MessageDigest.update(MessageDigest.java:361)
+	at java.base/java.security.MessageDigest.digest(MessageDigest.java:436)
+	at org.apache.commons.codec.digest.DigestUtils.md5(DigestUtils.java:260)
+	at org.apache.commons.codec.digest.DigestUtils.md5(DigestUtils.java:285)
+	at org.apache.commons.codec.digest.DigestUtils.md5Hex(DigestUtils.java:321)
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.encryptPassword(ClientServiceImpl.java:121)
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:111)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:40)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:21:03 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~age=106
+нояб. 01, 2021 3:21:03 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:21:03 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: age, value: 106
+нояб. 01, 2021 3:21:03 PM by.epamtc.stanislavmelnikov.view.menu.Menu runMenu
+INFO: null point
+java.lang.NullPointerException: Cannot read the array length because "input" is null
+	at java.base/java.security.MessageDigest.update(MessageDigest.java:361)
+	at java.base/java.security.MessageDigest.digest(MessageDigest.java:436)
+	at org.apache.commons.codec.digest.DigestUtils.md5(DigestUtils.java:260)
+	at org.apache.commons.codec.digest.DigestUtils.md5(DigestUtils.java:285)
+	at org.apache.commons.codec.digest.DigestUtils.md5Hex(DigestUtils.java:321)
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.encryptPassword(ClientServiceImpl.java:124)
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:112)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:40)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:22:35 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~age=106
+нояб. 01, 2021 3:22:35 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:22:35 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: age, value: 106
+нояб. 01, 2021 3:23:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~firstname=Nina~lastname=Kikv~admin=true
+нояб. 01, 2021 3:23:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:23:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: firstname, value: Nina
+нояб. 01, 2021 3:23:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: lastname, value: Kikv
+нояб. 01, 2021 3:23:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: admin, value: true
+нояб. 01, 2021 3:27:15 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~login=useeee~w
+нояб. 01, 2021 3:27:16 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:27:16 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: useeee
+нояб. 01, 2021 3:27:16 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: index out of bound error
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:30)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:27:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~login=useeee
+нояб. 01, 2021 3:27:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:27:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: useeee
+нояб. 01, 2021 3:27:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:119)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:40)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:27:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~login=useq
+нояб. 01, 2021 3:27:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:27:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: useq
+нояб. 01, 2021 3:27:44 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:119)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:40)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 3:45:11 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~admin=true
+нояб. 01, 2021 3:45:11 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:45:11 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: admin, value: true
+нояб. 01, 2021 3:48:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Wrong password
+нояб. 01, 2021 3:48:36 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~admin=true
+нояб. 01, 2021 3:48:36 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 3:48:36 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: admin, value: true
+нояб. 01, 2021 3:48:36 PM by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl updateByLogin
+INFO: log1 = true
+нояб. 01, 2021 3:48:36 PM by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl updateByLogin
+INFO: log2 = true
+нояб. 01, 2021 3:48:36 PM by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl updateByLogin
+INFO: log3 = true
+нояб. 01, 2021 4:09:42 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~password=new
+нояб. 01, 2021 4:09:42 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 4:09:42 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: password, value: new
+нояб. 01, 2021 4:09:42 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect password
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:98)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:40)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 4:09:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~password=new1
+нояб. 01, 2021 4:09:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 4:09:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: password, value: new1
+нояб. 01, 2021 4:12:26 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: 
+нояб. 01, 2021 4:12:26 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: index out of bound error
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:30)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 4:12:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~sdf
+нояб. 01, 2021 4:12:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 4:12:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: index out of bound error
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:30)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:169)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:173)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:31)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:81)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 4:12:56 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~lastname=asdsfdsd~age=1
+нояб. 01, 2021 4:12:56 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 4:12:56 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: lastname, value: asdsfdsd
+нояб. 01, 2021 4:12:56 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: age, value: 1
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~firstname=new~lastname=new~age=10~email=new@ya.ru~admin=true
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: firstname, value: new
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: lastname, value: new
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: age, value: 10
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: email, value: new@ya.ru
+нояб. 01, 2021 4:56:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: admin, value: true
+нояб. 01, 2021 4:57:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=user14~newlogin=newuser
+нояб. 01, 2021 4:57:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: user14
+нояб. 01, 2021 4:57:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: newlogin, value: newuser
+нояб. 01, 2021 5:13:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: petr18 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 01, 2021 5:13:39 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: new 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 01, 2021 5:13:46 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: newuser 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Wrong password
+нояб. 01, 2021 7:25:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: C:\Users\Stas\IdeaProjects\Library\target\classes\users.xml (Не удается найти указанный файл)
+нояб. 01, 2021 8:36:07 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~новая книга~автор новый~1954~254~5
+нояб. 01, 2021 8:36:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~выаы~ыва~ывап~ыва~выа
+нояб. 01, 2021 8:36:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect idRequest: выаы~ыва~ывап~ыва~выа Response: 0Incorrect id
+Try again
+нояб. 01, 2021 8:38:11 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~fdg~dgfdf~gdf~gdf~dg
+нояб. 01, 2021 8:38:11 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: fdg~dgfdf~gdf~gdf~dg Response: 0Incorrect year
+Try again
+нояб. 01, 2021 8:38:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~sdf~sdf~774~sdf~sdf
+нояб. 01, 2021 8:38:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect amount pagesRequest: sdf~sdf~774~sdf~sdf Response: 0Incorrect amount pages
+Try again
+нояб. 01, 2021 8:38:52 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~~~~~
+нояб. 01, 2021 10:27:02 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~Демиан~Гессе~1924~245~1
+нояб. 01, 2021 10:27:15 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~ыва~ыва~445ыв~ыва~ыв
+нояб. 01, 2021 10:27:15 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: ыва~ыва~445ыв~ыва~ыв Response: 0Incorrect year
+Try again
+нояб. 01, 2021 10:27:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~вы~вы~вы~ыв~ыв
+нояб. 01, 2021 10:27:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: вы~вы~вы~ыв~ыв Response: 0Incorrect year
+Try again
+нояб. 01, 2021 10:27:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~ы~в~ы~ы~ы
+нояб. 01, 2021 10:27:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect yearRequest: ы~в~ы~ы~ы Response: 0Incorrect year
+Try again
+нояб. 01, 2021 10:27:29 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~ы~ы~5~ыва~ыва
+нояб. 01, 2021 10:27:29 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect amount pagesRequest: ы~ы~5~ыва~ыва Response: 0Incorrect amount pages
+Try again
+нояб. 01, 2021 10:27:51 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~На западном фронте без перемен~Ремарк~1924~289~2
+нояб. 01, 2021 10:28:22 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~Воскресение~Толстой~1865~356~3
+нояб. 01, 2021 10:28:40 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByAuthor execute
+INFO: Searching by author failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: No books found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:58)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByAuthor.execute(SearcherByAuthor.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByAuthorReq(RequestGenerator.java:116)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$3(Menu.java:21)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 10:28:46 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByAuthor execute
+INFO: Searching by author failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: No books found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:58)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByAuthor.execute(SearcherByAuthor.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByAuthorReq(RequestGenerator.java:116)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$3(Menu.java:21)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 10:30:41 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater execute
+INFO: Index out of bound
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.BookUpdater.execute(BookUpdater.java:28)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateBookByIdReq(RequestGenerator.java:139)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$5(Menu.java:23)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 10:31:10 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookRemover execute
+INFO: request: DELETE_BY_ID~2
+нояб. 01, 2021 10:31:45 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~На западном фронте без перемен~Ремарк~1924~157~2
+нояб. 01, 2021 10:34:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: petr 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 01, 2021 10:34:35 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: ivan 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Wrong password
+нояб. 01, 2021 10:34:43 PM by.epamtc.stanislavmelnikov.controller.commandimpl.AdminRightsVerifier execute
+INFO: Admin rights check is not passed 
+ Current admin status: false
+нояб. 01, 2021 10:35:10 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: id=ivan~newid=ivan14
+нояб. 01, 2021 10:35:10 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: id, value: ivan
+нояб. 01, 2021 10:35:10 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: newid, value: ivan14
+нояб. 01, 2021 10:35:10 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: You haven't entered login.
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:80)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:40)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:168)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 10:35:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: request params: login=ivan~newlogin=iven1
+нояб. 01, 2021 10:35:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: login, value: ivan
+нояб. 01, 2021 10:35:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: Putting params in map, key: newlogin, value: iven1
+нояб. 01, 2021 10:37:49 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserRemover execute
+INFO: User removing failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Login is not found
+request: iven1 response: 0Login is not found
+Try again
+нояб. 01, 2021 10:37:58 PM by.epamtc.stanislavmelnikov.controller.commandimpl.UserRemover execute
+INFO: User removing failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Login is not found
+request: asd response: 0Login is not found
+Try again
+нояб. 01, 2021 11:48:12 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherById execute
+INFO: Searching by id failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: No books found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:58)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherById.execute(SearcherById.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByIdReq(RequestGenerator.java:106)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$1(Menu.java:19)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:84)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:36)
+
+нояб. 01, 2021 11:51:10 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 01, 2021 11:51:17 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: mashaN 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Wrong password
+нояб. 02, 2021 12:16:26 AM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 02, 2021 12:16:45 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserAdder execute
+INFO: User adding failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect password
+request: nick~sdf~sdf~sdf~sd~d~d response: 0Incorrect password
+Try again
+нояб. 02, 2021 12:17:01 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserAdder execute
+INFO: User adding failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Incorrect email
+request: nick~asd5~dsf~sdf~65~5~dsf response: 0Incorrect email
+Try again
+нояб. 02, 2021 12:18:15 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Login already exists
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.setUserFields(ClientServiceImpl.java:151)
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:92)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:37)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:164)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:38)
+
+нояб. 02, 2021 12:18:33 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:95)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:37)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:164)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:168)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:38)
+
+нояб. 02, 2021 12:19:00 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater execute
+INFO: User updating failure
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.ClientServiceImpl.updateByLogin(ClientServiceImpl.java:95)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.UserUpdater.execute(UserUpdater.java:37)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:164)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:168)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doUpdateUserRequest(RequestGenerator.java:168)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$9(Menu.java:27)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:38)
+
+нояб. 02, 2021 12:21:14 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserAdder execute
+INFO: User adding failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Login already exists
+request: nick~asd~sda~s~s~s~s response: 0Login already exists
+Try again
+нояб. 02, 2021 12:22:11 AM by.epamtc.stanislavmelnikov.controller.commandimpl.UserAdder execute
+INFO: User adding failure: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Login already exists
+request: masha~as~as~sa~a~a~a response: 0Login already exists
+Try again
+нояб. 02, 2021 12:57:22 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~Новая~книга~1478~264
+нояб. 02, 2021 12:57:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookRemover execute
+INFO: request: DELETE_BY_ID~2
+нояб. 02, 2021 12:58:15 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~еще одна~книга~1478~365
+нояб. 02, 2021 7:48:53 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~новая~книжонка~1574~5444
+нояб. 02, 2021 7:51:05 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~dsf~sdf~74~45
+нояб. 02, 2021 7:52:26 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~sad~sad~54~4
+нояб. 02, 2021 7:54:07 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~asd~asd~7~4
+нояб. 02, 2021 7:55:42 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~df5~df4~4~4
+нояб. 02, 2021 7:57:03 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~sdf~sdf~7~4
+нояб. 02, 2021 7:57:05 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in working with databaseRequest: sdf~sdf~7~4 Response: 0Exception in working with database
+Try again
+нояб. 02, 2021 7:58:05 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Wrong password
+нояб. 02, 2021 7:58:07 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login:  
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 02, 2021 7:58:19 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: a1234 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 02, 2021 7:58:26 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~sd~s~4~4
+нояб. 02, 2021 7:58:28 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in working with databaseRequest: sd~s~4~4 Response: 0Exception in working with database
+Try again
+нояб. 02, 2021 8:01:31 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~d~7~4~5
+нояб. 02, 2021 8:03:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~книжка~автор~744~55
+нояб. 02, 2021 8:38:19 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle execute
+INFO: Searching by title failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in trying to get books from database
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:55)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle.execute(SearcherByTitle.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByTitleReq(RequestGenerator.java:93)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$2(Menu.java:20)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:85)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:42)
+
+нояб. 02, 2021 8:38:29 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByAuthor execute
+INFO: Searching by author failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in trying to get books from database
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:55)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByAuthor.execute(SearcherByAuthor.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByAuthorReq(RequestGenerator.java:113)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$3(Menu.java:21)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:85)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:85)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:42)
+
+нояб. 02, 2021 8:39:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherById execute
+INFO: Searching by id failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in trying to get books from database
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:55)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherById.execute(SearcherById.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByIdReq(RequestGenerator.java:103)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$1(Menu.java:19)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:42)
+
+нояб. 02, 2021 8:40:35 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle execute
+INFO: Searching by title failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in trying to get books from database
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:55)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle.execute(SearcherByTitle.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByTitleReq(RequestGenerator.java:93)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$2(Menu.java:20)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:85)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:85)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:42)
+
+нояб. 02, 2021 8:42:55 PM by.epamtc.stanislavmelnikov.dao.daoimpl.SqlBookDao generateSqlQuery
+INFO: SELECT * FROM book WHERE bookname= книжка;
+нояб. 02, 2021 8:42:57 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle execute
+INFO: Searching by title failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception in trying to get books from database
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:55)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle.execute(SearcherByTitle.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByTitleReq(RequestGenerator.java:93)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$2(Menu.java:20)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:42)
+
+нояб. 02, 2021 8:46:36 PM by.epamtc.stanislavmelnikov.dao.daoimpl.SqlBookDao generateSqlQuery
+INFO: SELECT * FROM book WHERE bookname= 'книж';
+нояб. 02, 2021 8:46:38 PM by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle execute
+INFO: Searching by title failed
+by.epamtc.stanislavmelnikov.service.exception.ServiceException: No books found
+	at by.epamtc.stanislavmelnikov.service.serviceimpl.LibraryServiceImpl.searchByCriteria(LibraryServiceImpl.java:57)
+	at by.epamtc.stanislavmelnikov.controller.commandimpl.SearcherByTitle.execute(SearcherByTitle.java:22)
+	at by.epamtc.stanislavmelnikov.controller.executor.Executor.executeTask(Executor.java:22)
+	at by.epamtc.stanislavmelnikov.view.requestgenerator.RequestGenerator.doSearchByTitleReq(RequestGenerator.java:93)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.lambda$new$2(Menu.java:20)
+	at by.epamtc.stanislavmelnikov.view.menu.Menu.runMenu(Menu.java:79)
+	at by.epamtc.stanislavmelnikov.runner.Runner.main(Runner.java:42)
+
+нояб. 02, 2021 8:47:00 PM by.epamtc.stanislavmelnikov.dao.daoimpl.SqlBookDao generateSqlQuery
+INFO: SELECT * FROM book WHERE bookname= 'книжка';
+нояб. 02, 2021 9:18:33 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~новая книга~новый автор~1954~325
+нояб. 02, 2021 9:30:19 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookRemover execute
+INFO: request: DELETE_BY_ID~1
+нояб. 02, 2021 9:31:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~На западном фронте без перемен~Ремарк~1924~367
+нояб. 02, 2021 9:31:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception trying write book in databaseRequest: На западном фронте без перемен~Ремарк~1924~367 Response: 0Exception trying write book in database
+Try again
+нояб. 02, 2021 9:31:20 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~выа~ыв~4~4
+нояб. 02, 2021 9:32:16 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~На западном фронте без перемен~ы~4~4
+нояб. 02, 2021 9:32:16 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: Book adding exception 
+ Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: Exception trying write book in databaseRequest: На западном фронте без перемен~ы~4~4 Response: 0Exception trying write book in database
+Try again
+нояб. 02, 2021 9:32:24 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~Демиан~Гессе~1924~367
+нояб. 02, 2021 9:38:01 PM by.epamtc.stanislavmelnikov.controller.commandimpl.Authorization execute
+SEVERE: authorization error, login: masha' 
+Exception: by.epamtc.stanislavmelnikov.service.exception.ServiceException: User is not found
+нояб. 02, 2021 9:41:46 PM by.epamtc.stanislavmelnikov.controller.commandimpl.BookAdder execute
+INFO: request: ADD_BOOK~На фронте~Ремарк~1920~148

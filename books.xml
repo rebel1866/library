@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<books>
+    <book>
+        <name>Степной волк</name>
+        <author>Герман Гессе</author>
+        <year>1924</year>
+        <pages>348</pages>
+        <id>1</id>
+    </book>
+    <book>
+        <name>На западном фронте без перемен</name>
+        <author>Ремарк</author>
+        <year>1918</year>
+        <pages>249</pages>
+        <id>2</id>
+    </book>
+    <book>
+        <name>Игрок</name>
+        <author>Достовский</author>
+        <year>1864</year>
+        <pages>369</pages>
+        <id>3</id>
+    </book>
+</books>

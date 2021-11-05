@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<users>
+    <user>
+        <login>masha14N</login>
+        <password>828c88f34ecb4c1ca8d89e018c6fad1a</password>
+        <firstname>Мария</firstname>
+        <lastname>Белова</lastname>
+        <age>24</age>
+        <email>belova@gmail.com</email>
+        <admin>true</admin>
+    </user>
+    <user>
+        <login>petr18</login>
+        <password>512f88f34ecb4c1ca8d89e4f8c6fad47</password>
+        <firstname>Петр</firstname>
+        <lastname>Иванов</lastname>
+        <age>26</age>
+        <email>ivanov@mail.com</email>
+        <admin>false</admin>
+    </user>
+    <user>
+        <login>stanislav14</login>
+        <password>764c88f34ecb4c1ca8d89e018c6fas4p</password>
+        <firstname>Станислав</firstname>
+        <lastname>Мельников</lastname>
+        <age>24</age>
+        <email>rebel1866@yandex.ru</email>
+        <admin>true</admin>
+    </user>
+</users>
